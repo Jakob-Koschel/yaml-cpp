@@ -26,7 +26,7 @@ YAML_CPP_NORETURN void handle_exception(const char* what);
 
 template<typename Ex, typename... Args>
 YAML_CPP_NORETURN void YAML_throw(Args&&... args) {
-	handle_exception(Ex(std::forward<Args>(args)...).what());
+	// handle_exception(Ex(std::forward<Args>(args)...).what());
 }
 #endif
 
